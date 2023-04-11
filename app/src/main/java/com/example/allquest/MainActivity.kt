@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
-        Connection.api.patchEdit(6,patchProfile("Ivan","va","in","aleks@mail.ru","12.12.2003","Мужчина")).enqueue(object :retrofit2.Callback<profileData>{
+        Connection.api.patchEdit(6,patchProfile("Ivan","va","in","aleks123@mail.ru","12.12.2003","Мужчина")).enqueue(object :retrofit2.Callback<profileData>{
             override fun onResponse(call: Call<profileData>, response: Response<profileData>) {
 
                 Log.d(TAG,response.body().toString()+" PatchEdit")
